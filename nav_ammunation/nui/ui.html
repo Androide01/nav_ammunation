@@ -1,0 +1,65 @@
+<html>
+	<head>
+		<script src="nui://game/ui/jquery.js" type="text/javascript"></script>
+		<link href="ui.css" rel="stylesheet" type="text/css"/>
+		<link href="https://fonts.googleapis.com/css2?family=Do+Hyeon&display=swap" rel="stylesheet">
+	</head>
+	<body>
+		<div id="actionmenu">
+			<div id="mainmenu">
+				<button class="menuoption" data-sub="armamentos">Armamentos</button>
+				<button class="menuoption" data-sub="municoes">Munições</button>
+				<button class="menuoption" data-sub="utilidades">Utilidades</button>
+				<button class="menuoption" data-action="fechar">Fechar</button>
+			</div>
+
+			<div data-parent="mainmenu" id="armamentos" style="display: none;">
+				<button class="menuoption" data-sub="armamentos-fogo">Arma de Fogo</button>
+				<button class="menuoption" data-sub="armamentos-branca">Arma Branca</button>
+			</div>
+
+			<div data-parent="armamentos" id="armamentos-fogo" style="display: none;">
+				<button class="menuoption" data-sub="armamentos-fogo-comprar">Comprar</button>
+			</div>
+			<div data-parent="armamentos-fogo" id="armamentos-fogo-comprar" style="display: none;">
+				<button class="menuoption" data-action="armamentos-comprar-sinalizador"><l>Sinalizador</l><r>$1.000</r></button>
+			</div>
+
+			<div data-parent="armamentos" id="armamentos-branca" style="display: none;">
+				<button class="menuoption" data-sub="armamentos-branca-comprar">Comprar</button>
+			</div>
+			<div data-parent="armamentos-branca" id="armamentos-branca-comprar" style="display: none;">
+				<button class="menuoption" data-action="armamentos-comprar-faca"><l>Faca</l><r>$2.000</r></button>
+				<button class="menuoption" data-action="armamentos-comprar-adaga"><l>Adaga</l><r>$2.000</r></button>
+				<button class="menuoption" data-action="armamentos-comprar-ingles"><l>Soco-Inglês</l><r>$2.000</r></button>
+				<button class="menuoption" data-action="armamentos-comprar-machete"><l>Machete</l><r>$2.000</r></button>
+				<button class="menuoption" data-action="armamentos-comprar-canivete"><l>Canivete</l><r>$2.000</r></button>
+				<button class="menuoption" data-action="armamentos-comprar-grifo"><l>Chave de Grifo</l><r>$2.000</r></button>
+				<button class="menuoption" data-action="armamentos-comprar-martelo"><l>Martelo</l><r>$2.000</r></button>
+				<button class="menuoption" data-action="armamentos-comprar-golf"><l>Taco de Golf</l><r>$2.000</r></button>
+				<button class="menuoption" data-action="armamentos-comprar-cabra"><l>Pé de Cabra</l><r>$2.000</r></button>
+				<button class="menuoption" data-action="armamentos-comprar-machado"><l>Machado</l><r>$2.000</r></button>
+				<button class="menuoption" data-action="armamentos-comprar-lanterna"><l>Lanterna</l><r>$2.000</r></button>
+				<button class="menuoption" data-action="armamentos-comprar-beisebol"><l>Taco de Beisebol</l><r>$2.000</r></button>
+				<button class="menuoption" data-action="armamentos-comprar-garrafa"><l>Garrafa</l><r>$2.000</r></button>
+				<button class="menuoption" data-action="armamentos-comprar-batalha"><l>Machado de Batalha</l><r>$2.000</r></button>
+				<button class="menuoption" data-action="armamentos-comprar-sinuca"><l>Taco de Sinuca</l><r>$2.000</r></button>
+				<button class="menuoption" data-action="armamentos-comprar-pedra"><l>Machado de Pedra</l><r>$3.000</r></button>
+			</div>
+			<div data-parent="mainmenu" id="municoes" style="display: none;">
+				<button class="menuoption" data-sub="municoes-comprar">Comprar</button>
+			</div>
+			<div data-parent="municoes" id="municoes-comprar" style="display: none;">
+				<button class="menuoption" data-action="municoes-comprar-sinalizador"><l>Sinalizador</l><r>$1.000</r></button>
+			</div>
+
+			<div data-parent="mainmenu" id="utilidades" style="display: none;">
+				<button class="menuoption" data-sub="utilidades-comprar">Comprar</button>
+			</div>
+			<div data-parent="utilidades" id="utilidades-comprar" style="display: none;">
+				<button class="menuoption" data-action="utilidades-comprar-paraquedas"><l>Paraquedas</l><r>$1.000</r></button>
+			</div>
+			<script src="ui.js" type="text/javascript"></script>
+		</div>
+	</body>
+</html>
